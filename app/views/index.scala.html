@@ -1,7 +1,24 @@
 @(message: String)
 
-@main("Welcome to Play") {
 
-    @play20.welcome(message, style = "Java")
+@main("Play Test") {
+<!--     @play20.welcome(message, style = "Java") -->
+
+	<script src='@routes.Assets.at("javascripts/jIndex.js")')></script>
+	<h2>Employee Details</h2>
+	<ul id="employees">
+		<li><p>Employee</p>
+	</ul>
+	
+	<form action="@routes.Application.addEmployee()" method="post">
+		<p>
+			Employee Id : <input name="employee_id"> </br>
+			Last Name : <input name="last_name"> </br>
+			First Name : <input name="first_name"> </br>
+			Middle Name : <input name="middle_name"> </br>
+			
+			<input type="submit">
+		</p>
+	</form>
 
 }
