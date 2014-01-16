@@ -1,3 +1,3 @@
-%~d1
 play ~run
 pause
+%~d1
